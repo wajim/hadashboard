@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
-ruby '2.2.4'
+ruby '2.0.0'
 
 gem 'dashing'
 gem 'thor'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Authentication
 gem 'oa-openid'
@@ -16,8 +17,8 @@ gem 'json'
 gem 'data_mapper'
 
 # Development
-group :development do
-	gem 'dm-sqlite-adapter'
+group :production do
+gem 'pg'
 end
 
 # Production
